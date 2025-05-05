@@ -26,6 +26,12 @@ namespace BasicApp.Controllers
             return View();
         }
 
+         public IActionResult Update(Course model){
+
+            Repository.Add(model);
+            return View();
+        }
+
     }
     
 }
